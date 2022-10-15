@@ -243,10 +243,10 @@ img{
 }
 .home h1:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: 1px #03a9f4;
+    -webkit-text-stroke: 1px #d6e1e7;
 }
 .home h1:nth-child(2){
-    color: #03a9f4;
+    color: #fff;
     animation: animate 4s ease-in-out infinite;
 }
 @keyframes animate {
