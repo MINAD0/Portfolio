@@ -4,7 +4,7 @@
 :root{
     --header-height:3rem;
     /* COLORS  */
-    --hue-color: 230;
+    --hue-color: 204;
 
     /* HSL COLOR MODE */
 
@@ -228,6 +228,35 @@ img{
 
 }
 
+.home{
+    position: relative;
+    
+}
+.home h1{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    top: -5.5%;
+    right: -75%;
+    width: 400px;
+}
+.home h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 1px #03a9f4;
+}
+.home h1:nth-child(2){
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100%{
+        clip-path: polygon(0 43%, 14% 47%, 23% 55%, 33% 62%, 46% 60%, 59% 53%, 71% 45%, 88% 42%, 100% 41%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0 71%, 9% 60%, 20% 53%, 33% 51%, 47% 56%, 59% 63%, 72% 70%, 86% 70%, 100% 61%, 100% 100%, 1% 100%);
+    }
+}
 .home__content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
@@ -596,7 +625,7 @@ img{
 .services__icon{
     display: block;
     font-size: 1.5rem;
-    color: #3D1CE7;
+    color: rgb(3 169 244);
     margin-bottom: var(--mb-1);
 }
 
