@@ -237,8 +237,8 @@ img{
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 2.5em;
-    top: -5.5%;
-    right: -75%;
+    top: -5%;
+    right: -63%;
     width: 400px;
 }
 .home h1:nth-child(1){
@@ -1258,5 +1258,14 @@ body.dark-theme{
     }
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .home h1 {
+        position: absolute;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 2.5em;
+        top: -5.5%;
+        right: -75%;
+        width: 400px;
     }
 }
