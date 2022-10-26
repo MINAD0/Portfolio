@@ -241,9 +241,10 @@ img{
     right: -63%;
     width: 400px;
 }
-.home h1:nth-child(1){
-    color: transparent;
-    -webkit-text-stroke: 1px #d6e1e7;
+
+.home h1:nth-child(1) {
+    color: rgb(3 169 244);
+    -webkit-text-stroke: 1px #888a8b;
 }
 .home h1:nth-child(2){
     color: #fff;
