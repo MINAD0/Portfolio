@@ -193,3 +193,37 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// // =========================
+
+const portfolio = [
+    {name: "Ecommerce Store", img: "assets/img/ecoshopPhp.png", desc: "this is a ecommerce store made with pure php"},
+    {name: "Ecommerce Store", img: "assets/img/laravelStore.png", desc: "this is a ecommerce store made with pure php"},
+    {name: "Ecommerce Store", img: "assets/img/project3.png", desc: "this is a ecommerce store made with pure php"},
+]; 
+const title = document.getElementsByClassName('portfolio__title');
+const desc = document.getElementsByClassName('portfolio__description');
+const img = document.getElementsByClassName('portfolio__img');
+
+let result = portfolio.map((index) =>{
+    title.innerHTML += index.name;
+    desc.innerHTML += index.desc;
+    img.src += index.img;
+});
+        
+
+// const xhr = new XMLHttpRequest();
+
+// const container = document.getElementById('swiper-wrapper');
+
+// xhr.onload = function(){
+//     if(this.status === 200){
+//         container.innerHTML = xhr.responseText;
+//     }else{
+//         console.log("error");
+//     }
+// };
+
+// xhr.open('GET', 'portfolio.html', true);
+// xhr.send();
